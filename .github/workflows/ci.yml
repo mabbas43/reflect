@@ -1,5 +1,13 @@
-# name: Reflect CI/CD Pipeline
+name: Reflect CI/CD Pipeline
 
+on: [push, pull_request]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello, Muhammad Abbas! CI is working."
 # on:
 #   push:
 #     branches: [main, develop]
